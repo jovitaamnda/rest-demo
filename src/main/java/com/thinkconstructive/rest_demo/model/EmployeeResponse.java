@@ -4,16 +4,22 @@ import java.util.List;
 
 public class EmployeeResponse {
     private String status;
-    private List<Employee> data;
+    private List<EmployeeData> data;
 
     // Getters dan Setters
+    public String getStatus() {
+        return status;
+    }
 
-    public static class Employee {
-        private int id;
-        private String employee_name;
-        private int employee_salary;
-        private int employee_age;
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-        // Getters dan Setters
+    public List<EmployeeData> getData() {
+        return data;
+    }
+
+    public void setData(List<EmployeeData> data) {
+        this.data = data;
     }
 }
